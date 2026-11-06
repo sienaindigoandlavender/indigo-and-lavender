@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360">
+<defs><filter id="ink"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="23"/><feDisplacementMap in="SourceGraphic" scale="1.7"/></filter>
+<filter id="wash" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="11" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="12" result="d"/><feGaussianBlur in="d" stdDeviation="1.1"/></filter></defs>
+<!-- the black key box on the old door, the key beside it -->
+<g filter="url(#wash)" style="mix-blend-mode:multiply">
+  <path d="M40 20 L330 20 L330 350 L40 350 Z" fill="#9A5236" opacity=".55"/>
+  <path d="M60 40 L310 40 L310 330 L60 330 Z" fill="#C97B3B" opacity=".35"/>
+  <path d="M330 30 C420 26 540 34 580 40 L580 350 L330 350 Z" fill="#EADFD1" opacity=".7"/>
+  <path d="M140 120 L250 120 L250 270 L140 270 Z" fill="#2a2520" opacity=".88"/>
+  <path d="M380 210 C410 196 440 200 452 222 C462 244 444 266 418 266 C392 266 376 248 380 210 Z" fill="#E8D493" opacity=".75"/>
+</g>
+<g fill="none" stroke="#2a2520" stroke-linecap="round" stroke-linejoin="round" filter="url(#ink)">
+  <!-- the door, its planks and studs -->
+  <path d="M40 20 L330 20 L330 350 L40 350 Z" stroke-width="2"/>
+  <path d="M60 40 L310 40 L310 330 L60 330 Z" stroke-width="1.2"/>
+  <path d="M110 40 L110 330 M160 40 L160 112 M210 40 L210 112 M260 40 L260 330" stroke-width="0.8" opacity=".6"/>
+  <g stroke-width="0">
+    <circle cx="80" cy="64" r="4" fill="#2a2520"/><circle cx="290" cy="64" r="4" fill="#2a2520"/>
+    <circle cx="80" cy="306" r="4" fill="#2a2520"/><circle cx="290" cy="306" r="4" fill="#2a2520"/>
+    <circle cx="80" cy="185" r="4" fill="#2a2520"/><circle cx="290" cy="185" r="4" fill="#2a2520"/>
+  </g>
+  <!-- the box: four little dials, the shackle -->
+  <path d="M165 120 C165 96 225 96 225 120" stroke-width="3"/>
+  <path d="M140 120 L250 120 L250 270 L140 270 Z" stroke-width="2"/>
+  <g stroke="#FBF6EF" stroke-width="1.6">
+    <rect x="156" y="150" width="78" height="22" rx="0"/>
+    <path d="M175.5 150 L175.5 172 M195 150 L195 172 M214.5 150 L214.5 172"/>
+    <path d="M163 161 L169 161 M182 161 L188 161 M202 161 L208 161 M221 161 L227 161"/>
+    <path d="M168 205 L222 205 L222 248 L168 248 Z" opacity=".7"/>
+  </g>
+  <!-- the key, waiting -->
+  <path d="M440 236 C440 218 412 214 404 228 C396 242 410 258 426 254 C434 252 440 246 440 236 Z" stroke-width="2"/>
+  <circle cx="418" cy="236" r="6" stroke-width="1.4"/>
+  <path d="M440 236 L540 236 M512 236 L512 252 M526 236 L526 248 M540 236 L540 254" stroke-width="2.2"/>
+  <path d="M396 226 C380 214 372 196 378 180" stroke-width="1" opacity=".6"/>
+</g>
+</svg>

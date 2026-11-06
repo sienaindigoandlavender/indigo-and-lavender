@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 280">
+<defs><filter id="ink"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="71"/><feDisplacementMap in="SourceGraphic" scale="1.6"/></filter>
+<filter id="wash" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="29" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="10" result="d"/><feGaussianBlur in="d" stdDeviation="1"/></filter></defs>
+<g filter="url(#wash)" style="mix-blend-mode:multiply">
+  <!-- the blue door behind -->
+  <path d="M30 20 L270 20 L270 250 L30 250 Z" fill="#3E63B0" opacity=".45"/>
+  <!-- the stack of old cushions -->
+  <path d="M58 132 C110 124 196 126 238 134 L240 154 C190 160 108 160 56 152 Z" fill="#B9564A" opacity=".6"/>
+  <path d="M62 154 C112 160 186 160 232 154 L236 176 C186 182 110 182 60 176 Z" fill="#C9A15B" opacity=".6"/>
+  <path d="M56 176 C110 182 190 182 238 176 L242 198 C190 204 108 204 52 198 Z" fill="#8E5A7A" opacity=".5"/>
+  <path d="M60 198 C110 204 186 204 234 198 L238 222 C186 228 110 228 56 222 Z" fill="#B9564A" opacity=".55"/>
+  <path d="M54 222 C108 228 192 228 240 222 L242 246 C190 252 108 252 52 246 Z" fill="#6F7F52" opacity=".45"/>
+  <!-- the sleeping ginger cat -->
+  <path d="M78 122 C80 104 104 92 136 92 C170 92 202 98 214 112 C222 104 236 102 242 112 C250 124 244 134 230 134 C200 134 120 134 90 134 C82 134 76 130 78 122 Z" fill="#E09A4E" opacity=".7"/>
+  <path d="M104 132 C110 150 128 168 150 178 C160 182 166 176 158 170 C140 160 126 146 122 132 Z" fill="#E09A4E" opacity=".65"/>
+  <path d="M236 128 C248 132 262 140 270 150 L262 154 C254 146 244 140 232 136 Z" fill="#E09A4E" opacity=".65"/>
+</g>
+<g fill="none" stroke="#2a2520" stroke-linecap="round" stroke-linejoin="round" filter="url(#ink)">
+  <!-- door panels -->
+  <path d="M30 20 L270 20 L270 250 M30 250 L30 20" stroke-width="1.1"/>
+  <path d="M150 20 L150 90" stroke-width="0.9"/>
+  <path d="M46 34 L136 34 L136 90 M164 34 L254 34 L254 90" stroke-width="0.8"/>
+  <!-- cushions, each a soft slab with a little pattern -->
+  <path d="M58 132 C110 124 196 126 238 134 L240 154 C190 160 108 160 56 152 Z" stroke-width="1.3"/>
+  <path d="M62 154 C112 160 186 160 232 154 L236 176 C186 182 110 182 60 176" stroke-width="1.2"/>
+  <path d="M56 176 C110 182 190 182 238 176 L242 198 C190 204 108 204 52 198" stroke-width="1.2"/>
+  <path d="M60 198 C110 204 186 204 234 198 L238 222 C186 228 110 228 56 222" stroke-width="1.2"/>
+  <path d="M54 222 C108 228 192 228 240 222 L242 246 C190 252 108 252 52 246" stroke-width="1.2"/>
+  <path d="M60 176 L56 154 M52 198 L56 176 M56 222 L60 198 M52 246 L54 222" stroke-width="1.2"/>
+  <path d="M90 166 l8 -6 l8 6 l8 -6 l8 6 M170 166 l8 -6 l8 6 l8 -6 l8 6 M110 212 l6 -5 l6 5 l6 -5 l6 5 M180 212 l6 -5 l6 5" stroke-width="0.7"/>
+  <path d="M74 188 l4 0 M90 188 l4 0 M206 188 l4 0 M224 188 l4 0 M80 236 l5 0 M200 236 l5 0" stroke-width="1"/>
+  <!-- fringe -->
+  <path d="M62 226 l-4 8 M68 228 l-3 9 M74 229 l-2 8" stroke-width="0.7"/>
+  <!-- the cat: long, flat out, chin on paws -->
+  <path d="M90 134 C78 132 74 120 82 110 C92 98 116 92 140 92 C172 92 200 98 214 112" stroke-width="1.5"/>
+  <path d="M214 112 L216 98 L224 106 C230 104 236 104 240 106 L248 98 L248 114 C252 124 246 132 236 134" stroke-width="1.5"/>
+  <path d="M226 120 c2 -3 5 -3 7 0 M239 120 c1 -3 4 -3 5 0" stroke-width="1.3"/><path d="M232 126 c2 2 4 2 6 0" stroke-width="1"/><ellipse cx="226" cy="126" rx="6" ry="3.5" fill="#E8907A" opacity=".45" stroke="none"/>
+  <path d="M90 134 L236 134" stroke-width="1.1"/>
+  <!-- front paw dangling over the edge -->
+  <path d="M236 130 C250 132 262 140 270 150 C272 154 266 158 262 154 C254 146 244 140 232 136" stroke-width="1.3"/>
+  <!-- tail draped down the stack -->
+  <path d="M104 132 C110 150 128 168 150 178 C160 182 166 176 158 170 C140 160 126 146 122 134" stroke-width="1.3"/>
+  <path d="M132 160 l6 -4 M144 170 l6 -3" stroke-width="0.8"/>
+  <!-- tabby stripes -->
+  <path d="M130 96 c2 6 2 10 0 14 M150 94 c2 6 2 10 0 14 M170 96 c2 6 2 10 0 14 M190 100 c2 6 2 10 0 14" stroke-width="0.8"/>
+</g>
+</svg>

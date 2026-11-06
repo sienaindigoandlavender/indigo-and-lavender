@@ -3,7 +3,7 @@
 The neutral guest site (Jacqueline, 6 Nov 2026). Airbnb guests must never see "Riad di Siena": their arrival links live here.
 
 - `/` is only a password box (`SITE_PASSWORD` in Vercel; unset = nothing opens). A curious visitor sees nothing else.
-- `/welcome?b=…&k=…` (the guest's signed link; data from the house's `/api/welcome-data`). `/arrival` and `/keys` are linked from it but not built yet.
+- `/welcome?b=…&k=…` (the guest's signed link; data from the house's `/api/welcome-data`). `/arrival` (arrival time, proxied `/api/arrival`) and `/keys` (data from `/api/keys-data`; passport upload via `/api/passport`, tax link via `/api/tax`).
 - `/the-riad/directions` (No. 37), `/the-riad/transfer`, `/the-riad/dinners`; `/the-douaria/directions` (No. 35), `/the-douaria/transfer`.
 - Data comes from the main site's API server-side (`lib/upstream.ts`, `UPSTREAM_URL`); `neutral()` strips the old name and links from every response. The browser never calls riaddisiena.com.
 - Never "Riad di Siena", never riaddisiena.com, never a link to another brand (Slow Morocco, Zfriti, Dance with Lions…). Signed Jacqueline, Zahra and Mouad.
