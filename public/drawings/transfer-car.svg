@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+<defs><filter id="ink"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="11"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
+<filter id="wash" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="5" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="14" result="d"/><feGaussianBlur in="d" stdDeviation="1.2"/></filter></defs>
+<g filter="url(#wash)" style="mix-blend-mode:multiply">
+  <!-- evening sky glow behind the minaret -->
+  <ellipse cx="400" cy="170" rx="190" ry="150" fill="#EDCB8C" opacity=".35"/>
+  <!-- the Koutoubia, pink-ochre stone -->
+  <path d="M352 392 L354 92 L446 92 L448 392 Z" fill="#D9A27E" opacity=".55"/>
+  <path d="M378 92 L380 44 L420 44 L422 92 Z" fill="#D9A27E" opacity=".5"/>
+  <!-- the band of green tiles at the top -->
+  <path d="M354 104 L446 104 L446 116 L354 116 Z" fill="#6E8F7A" opacity=".45"/>
+  <!-- the three golden balls -->
+  <circle cx="400" cy="34" r="6" fill="#E8C35A" opacity=".8"/>
+  <circle cx="400" cy="20" r="5" fill="#E8C35A" opacity=".8"/>
+  <circle cx="400" cy="9" r="3.5" fill="#E8C35A" opacity=".8"/>
+  <!-- a palm on the left -->
+  <path d="M520 392 C522 330 518 270 512 230" fill="none" stroke="#9A5236" stroke-width="7" opacity=".4"/>
+  <path d="M512 228 C490 214 470 214 452 226 C474 220 494 224 510 234 Z M512 228 C532 210 556 210 574 222 C552 218 532 222 514 234 Z M512 226 C506 204 512 186 528 176 C520 194 518 210 516 228 Z" fill="#6E8F7A" opacity=".5"/>
+  <!-- the private transfer van, deep night blue, long and kind -->
+  <path d="M40 352 L40 318 C40 306 48 300 62 296 L96 288 C108 262 120 244 136 234 C140 232 146 230 152 230 L316 230 C326 230 334 238 334 248 L334 352 C334 360 328 366 320 366 L54 366 C46 366 40 360 40 352 Z" fill="#3B4A6B" opacity=".55"/>
+  <!-- windows -->
+  <path d="M102 290 C112 268 124 252 140 244 L196 244 L196 290 Z M206 244 L254 244 L254 290 L206 290 Z M264 244 L322 244 L322 290 L264 290 Z" fill="#EADFD1" opacity=".85"/>
+  <!-- cheek -->
+  <ellipse cx="110" cy="314" rx="11" ry="6" fill="#D9826B" opacity=".55"/>
+  <!-- wheels -->
+  <circle cx="96" cy="366" r="24" fill="#2a2520" opacity=".55"/>
+  <circle cx="290" cy="366" r="24" fill="#2a2520" opacity=".55"/>
+  <!-- the ground -->
+  <path d="M40 394 C200 392 400 396 560 394 L570 410 L30 410 Z" fill="#EADFD1" opacity=".9"/>
+</g>
+<g fill="none" stroke="#2a2520" stroke-linecap="round" stroke-linejoin="round" filter="url(#ink)">
+  <!-- the minaret: tall, square, a little uneven -->
+  <path d="M350 392 L352 90 L448 90 L450 392" stroke-width="1.8"/>
+  <path d="M352 104 L448 104 M352 118 L448 118" stroke-width="1"/>
+  <!-- merlons along the top -->
+  <path d="M352 90 L352 82 L362 82 L362 90 M376 90 L376 82 L386 82 L386 90 M400 90 L400 82 L410 82 L410 90 M424 90 L424 82 L434 82 L434 90 M440 90 L440 82 L448 82" stroke-width="1.1"/>
+  <!-- the lantern on top, and the rod with its golden balls -->
+  <path d="M378 82 L380 44 L420 44 L422 82" stroke-width="1.4"/>
+  <path d="M400 44 L400 4" stroke-width="1"/>
+  <circle cx="400" cy="34" r="6" stroke-width="1.1"/>
+  <circle cx="400" cy="20" r="5" stroke-width="1.1"/>
+  <circle cx="400" cy="9" r="3.5" stroke-width="1"/>
+  <!-- arched windows and the lattice panels -->
+  <path d="M388 180 L388 160 C388 150 412 150 412 160 L412 180" stroke-width="1.2"/>
+  <path d="M390 250 L390 232 C390 224 410 224 410 232 L410 250" stroke-width="1.1"/>
+  <path d="M372 300 L380 290 L388 300 L380 310 Z M412 300 L420 290 L428 300 L420 310 Z" stroke-width="0.9"/>
+  <path d="M388 340 L388 322 C388 314 412 314 412 322 L412 340" stroke-width="1.1"/>
+  <!-- the palm -->
+  <path d="M520 392 C522 330 518 270 512 230" stroke-width="1.4"/>
+  <path d="M512 228 C490 214 470 214 452 226 M512 228 C532 210 556 210 574 222 M512 226 C506 204 512 186 528 176 M512 230 C496 236 484 250 480 264 M514 230 C532 238 544 252 548 266" stroke-width="1.1"/>
+  <!-- the van: one long body, a short sloping nose -->
+  <path d="M40 352 L40 318 C40 306 48 300 62 296 L96 288 C108 262 120 244 136 234 C140 232 146 230 152 230 L316 230 C326 230 334 238 334 248 L334 352 C334 360 328 366 320 366 L54 366 C46 366 40 360 40 352 Z" stroke-width="2"/>
+  <path d="M102 290 C112 268 124 252 140 244 L196 244 L196 290 Z" stroke-width="1.4"/>
+  <path d="M206 244 L254 244 L254 290 L206 290 Z M264 244 L322 244 L322 290 L264 290 Z" stroke-width="1.3"/>
+  <!-- the sliding door, its rail and handle -->
+  <path d="M200 296 L200 360 M204 300 L330 300" stroke-width="1"/>
+  <path d="M184 320 L196 320" stroke-width="1.6"/>
+  <!-- big eyes in the front window -->
+  <circle cx="134" cy="268" r="15" fill="#fff" stroke-width="1.7"/>
+  <circle cx="172" cy="268" r="15" fill="#fff" stroke-width="1.7"/>
+  <circle cx="130" cy="271" r="7" fill="#2a2520" stroke="none"/>
+  <circle cx="168" cy="271" r="7" fill="#2a2520" stroke="none"/>
+  <circle cx="132" cy="267" r="2.4" fill="#fff" stroke="none"/>
+  <circle cx="170" cy="267" r="2.4" fill="#fff" stroke="none"/>
+  <!-- the smile -->
+  <path d="M124 312 C136 328 160 328 172 312" stroke-width="1.8"/>
+  <!-- headlamp and bumper -->
+  <circle cx="54" cy="310" r="8" stroke-width="1.3"/>
+  <path d="M40 342 L72 342" stroke-width="1.1"/>
+  <!-- wheels -->
+  <circle cx="96" cy="366" r="24" stroke-width="1.8"/>
+  <circle cx="290" cy="366" r="24" stroke-width="1.8"/>
+  <circle cx="96" cy="366" r="8" stroke-width="1.1"/>
+  <circle cx="290" cy="366" r="8" stroke-width="1.1"/>
+  <!-- the ground -->
+  <path d="M40 394 C200 392 400 396 560 394" stroke-width="1.3"/>
+</g>
+</svg>

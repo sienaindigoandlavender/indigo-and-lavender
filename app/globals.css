@@ -1,0 +1,322 @@
+/* Google Fonts - @import MUST be first */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* House rule: photos can't be dragged out or long-press saved */
+img, video { -webkit-user-drag: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+
+/* ═══════════════════════════════════════════════════════════════
+   SLOW WORLD DESIGN SYSTEM
+   Shared by: Riad di Siena, Slow Morocco, Slow Namibia, 
+              Slow Türkiye, Slow Tunisia, Slow Mauritius
+   
+   Last updated: February 4, 2026
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════
+   CSS VARIABLES
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'EB Garamond', Georgia, serif;
+  
+  /* Colors - HSL format for Tailwind compatibility */
+  --background: 40 20% 97%;        /* Warm off-white */
+  --foreground: 30 13% 14%;        /* Warm brown-black (#2a2520) */
+
+  --card: 0 0% 100%;
+  --card-foreground: 30 13% 14%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 30 13% 14%;
+
+  --primary: 30 13% 14%;
+  --primary-foreground: 40 20% 97%;
+
+  --secondary: 40 20% 92%;
+  --secondary-foreground: 30 13% 14%;
+
+  --muted: 40 15% 90%;
+  --muted-foreground: 30 13% 14%;   /* text is never paler than ink */
+
+  --accent: 40 20% 88%;
+  --accent-foreground: 30 13% 14%;
+
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 40 15% 85%;
+  --input: 40 15% 85%;
+  --ring: 30 13% 14%;
+  
+  --radius: 0rem;
+  
+  /* Footer */
+  --footer-background: 30 10% 18%;
+  --footer-foreground: 40 20% 97%;
+  
+  /* Sand fallback for images */
+  --sand: 40 25% 88%;
+
+  /* The house: lime plaster by day, candlelight by night (Oct 2026 redesign) */
+  --font-house: 'Fraunces Variable', 'Playfair Display', Georgia, serif;
+  --lime: #F8F4EE;
+  --tadelakt: #EADFD1;
+  --bejmat: #9A5236;
+  --door: #E8D493;
+  --night: #1D1814;
+  --candle: #EDCB8C;
+  --ink: #2a2520;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BASE STYLES
+   ═══════════════════════════════════════════════════════════════ */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: clip; /* clip, not hidden: hidden would break position: sticky */
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 19px;
+  line-height: 1.7;
+  font-weight: 450;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TYPOGRAPHY
+   ═══════════════════════════════════════════════════════════════ */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 8vw, 4.25rem);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.6rem);
+  line-height: 1.12;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+/* Editorial kicker — small, tracked label above headings (magazine department style) */
+.kicker {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: hsl(var(--muted-foreground));
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SELECTION
+   ═══════════════════════════════════════════════════════════════ */
+
+::selection {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SCROLLBAR (Minimal)
+   ═══════════════════════════════════════════════════════════════ */
+
+/* No visible scrollbars, anywhere (house rule). Scrolling still works. */
+html, body, * { scrollbar-width: none; -ms-overflow-style: none; }
+*::-webkit-scrollbar { display: none; width: 0; height: 0; }
+
+/* Hidden scrollbar utility - allows scroll without visible bar */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FORM ELEMENTS
+   ═══════════════════════════════════════════════════════════════ */
+
+input, textarea, select {
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+/* Placeholders in full ink, italic to tell them apart (never pale grey) */
+input::placeholder, textarea::placeholder {
+  color: hsl(var(--foreground));
+  opacity: 1;
+  font-style: italic;
+}
+
+/* Form labels - uppercase, tracked */
+.form-label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: hsl(var(--muted-foreground));
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BUTTONS
+   ═══════════════════════════════════════════════════════════════ */
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid hsl(var(--foreground));
+  background: transparent;
+  color: hsl(var(--foreground));
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   UTILITIES
+   ═══════════════════════════════════════════════════════════════ */
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Sand background for missing images */
+.bg-sand {
+  background-color: hsl(var(--sand));
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ANIMATIONS
+   ═══════════════════════════════════════════════════════════════ */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animation-delay-100 { animation-delay: 0.1s; }
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-300 { animation-delay: 0.3s; }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   THE HOUSE — shared shapes and type for the guest pages
+   Photos fill the screen, still. Boxes and buttons have straight corners
+   (Jacqueline, 17 Oct 2026: no rounded corners on this site).
+   ═══════════════════════════════════════════════════════════════ */
+
+.house {
+  font-family: var(--font-house);
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 100, "WONK" 0;
+  letter-spacing: -0.015em;
+}
+
+.plaster {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  isolation: isolate;
+}
+
+/* The one button colour: the pale yellow of the riad's doors. */
+.btn-door {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-radius: 0;
+  background: var(--door);
+  color: var(--ink);
+  padding: 0.95rem 1.9rem;
+  font-size: 1rem;
+  line-height: 1;
+  transition: background-color .3s ease, transform .3s ease;
+}
+.btn-door:hover { background: #F1E2AE; }
+.btn-door:focus-visible,
+.link-house:focus-visible { outline: 2px solid var(--bejmat); outline-offset: 4px; }
+
+/* Quiet text link: underline that thickens on hover. */
+.link-house {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+  transition: text-decoration-thickness .2s ease, color .2s ease;
+}
+.link-house:hover { text-decoration-thickness: 2px; color: var(--bejmat); }
+.night .link-house:hover { color: var(--candle); }
+
