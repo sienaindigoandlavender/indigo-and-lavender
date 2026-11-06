@@ -1,6 +1,6 @@
 "use client";
 
-// The house calendar: the month grid of the Riad di Siena booking modal, used for
+// The house calendar: the house month grid, used for
 // every date on the site. Dates are plain "YYYY-MM-DD" strings built by hand in UTC
 // (Morocco = UTC), with no locale APIs, so server and browser always agree.
 

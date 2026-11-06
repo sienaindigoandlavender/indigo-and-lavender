@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 300 170">
+<defs><filter id="ink"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="51"/><feDisplacementMap in="SourceGraphic" scale="1.6"/></filter>
+<filter id="wash" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="3" seed="19" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="10" result="d"/><feGaussianBlur in="d" stdDeviation="1"/></filter></defs>
+<g filter="url(#wash)" style="mix-blend-mode:multiply">
+  <!-- the sky -->
+  <path d="M20 120 C10 70 60 20 140 18 C220 16 290 50 284 120 Z" fill="#6E8FC4" opacity=".22"/>
+  <!-- the pink wall and its brick lip -->
+  <path d="M0 132 C80 126 220 128 300 134 L300 220 L0 220 Z" fill="#D9A07A" opacity=".75"/>
+  <path d="M0 140 C80 136 220 138 300 144 L300 154 C220 148 80 146 0 150 Z" fill="#9A5236" opacity=".6"/>
+  <!-- her golden cap -->
+  <path d="M112 62 L118 44 C122 50 128 54 134 56 C140 52 146 50 152 50 L160 40 C164 52 164 62 160 70 C148 64 124 64 112 62 Z" fill="#E3A35A" opacity=".75"/>
+  <path d="M100 96 C96 86 100 76 108 72 C106 84 104 92 100 96 Z" fill="#E3A35A" opacity=".5"/>
+  <path d="M141 82 L147 82 L144 86 Z" fill="#D98A8A" opacity=".8"/>
+</g>
+<g filter="url(#wash)"><path d="M112 64 L118 44 C124 52 130 55 136 56 C142 51 150 49 152 50 L160 40 C166 54 166 70 160 80 C172 92 178 108 176 132 L76 134 C74 120 86 92 110 78 Z" fill="#FBF6EF"/></g>
+<g filter="url(#wash)" style="mix-blend-mode:multiply"><path d="M112 62 L118 44 C122 50 128 54 134 56 C140 52 146 50 152 50 L160 40 C164 52 164 62 160 70 C148 64 124 64 112 62 Z" fill="#E3A35A" opacity=".75"/><path d="M141 82 L147 82 L144 86 Z" fill="#D98A8A" opacity=".8"/></g>
+<g fill="none" stroke="#2a2520" stroke-linecap="round" stroke-linejoin="round" filter="url(#ink)">
+  <!-- head turned to the sun -->
+  <path d="M112 64 L118 44 C124 52 130 55 136 56 C142 51 150 49 152 50 L160 40 C166 54 166 70 160 80 C156 92 146 98 136 98 C122 98 112 88 110 76" stroke-width="1.5"/>
+  <path d="M120 50 L122 58 M156 48 L153 56" stroke-width="0.8"/>
+  <ellipse cx="134" cy="70" rx="3.1" ry="3.6" fill="#2a2520" stroke="none"/><circle cx="135.3" cy="68.6" r="1.2" fill="#fff" stroke="none"/><ellipse cx="151" cy="68" rx="2.7" ry="3.2" fill="#2a2520" stroke="none"/><circle cx="152.1" cy="66.7" r="1.0" fill="#fff" stroke="none"/><ellipse cx="130" cy="82" rx="6" ry="3.5" fill="#E8907A" opacity=".45" stroke="none"/>
+  <path d="M144 86 L144 89 C141 93 137 92 136 89 M144 89 C146 92 149 92 150 90" stroke-width="1"/>
+  <path d="M150 84 L176 78 M150 88 L176 90" stroke-width="0.6"/>
+  <!-- the fluffy body behind the ledge -->
+  <path d="M110 76 C96 80 86 96 80 112 C76 122 74 128 76 134" stroke-width="1.4"/>
+  <path d="M160 82 C172 92 178 108 176 126" stroke-width="1.3"/>
+  <path d="M84 100 c-4 4 -4 8 0 12 M90 92 c-4 4 -4 8 0 12 M170 100 c4 4 4 8 0 12" stroke-width="0.7"/>
+  <!-- paws hanging over the edge -->
+  <path d="M100 126 C98 134 98 142 102 148 C108 152 116 150 118 144 C118 138 116 132 114 126" stroke-width="1.3"/>
+  <path d="M146 124 C144 134 144 142 148 148 C154 152 162 150 164 144 C164 136 162 130 160 124" stroke-width="1.3"/>
+  <path d="M106 147 l0 -3 M111 148 l0 -3 M152 147 l0 -3 M157 148 l0 -3" stroke-width="0.8"/>
+  <!-- the wall -->
+  <path d="M0 132 C80 126 220 128 300 134" stroke-width="1.4"/>
+  <path d="M0 150 C80 146 220 148 300 154" stroke-width="1.1"/>
+  <path d="M60 138 L60 148 M140 136 L140 146 M220 138 L220 150" stroke-width="0.8"/>
+  <!-- a pipe on the roof -->
+  <path d="M14 132 L14 92 C14 88 22 88 22 92 L22 131" stroke-width="1.1"/>
+</g>
+</svg>

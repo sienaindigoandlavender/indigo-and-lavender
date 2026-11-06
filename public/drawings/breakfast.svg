@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+<defs><filter id="ink"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="11"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
+<filter id="wash" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="5" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="14" result="d"/><feGaussianBlur in="d" stdDeviation="1.2"/></filter></defs>
+<g filter="url(#wash)" style="mix-blend-mode:multiply">
+  <!-- morning light -->
+  <ellipse cx="420" cy="200" rx="140" ry="120" fill="#EDCB8C" opacity=".3"/>
+<g transform="translate(0 24)">
+  <!-- tabletop, tadelakt -->
+  <ellipse cx="400" cy="318" rx="150" ry="28" fill="#EADFD1" opacity=".95"/>
+</g>
+  <!-- the dress, indigo -->
+  <path d="M178 160 C170 220 160 300 150 386 C180 394 230 394 262 386 C250 300 236 220 222 160 Z" fill="#3B4A6B" opacity=".5"/>
+  <!-- scarf on the head, saffron -->
+  <path d="M176 104 C170 84 182 66 202 64 C222 64 232 80 230 98 C226 116 214 128 204 132 C194 132 182 122 176 104 Z" fill="#E8A33D" opacity=".5"/>
+  <path d="M176 104 C166 130 168 152 178 162 L188 128 Z" fill="#E8A33D" opacity=".45"/>
+  <!-- skin -->
+  <path d="M190 96 C190 112 198 120 208 118 C216 116 220 106 218 96 Z" fill="#D9A27E" opacity=".45"/>
+  <!-- the teapot, silver warm -->
+  <path d="M276 112 C266 120 266 140 280 146 C296 150 312 146 318 134 C322 120 312 110 300 108 C292 106 282 108 276 112 Z" fill="#C9B79C" opacity=".7"/>
+  <!-- the tea -->
+  <path d="M332 120 C334 180 338 250 340 318" stroke="#B5652E" stroke-width="3" fill="none" opacity=".8"/>
+  <path transform="translate(0 24)" d="M332 288 L348 288 L346 306 L334 306 Z" fill="#B5652E" opacity=".6"/>
+<g transform="translate(0 24)">
+  <!-- khobz -->
+  <ellipse cx="430" cy="300" rx="34" ry="10" fill="#C99A5B" opacity=".75"/>
+  <!-- amlou and honey, orange -->
+  <ellipse cx="482" cy="308" rx="13" ry="5" fill="#9A5236" opacity=".6"/>
+  <ellipse cx="380" cy="314" rx="12" ry="5" fill="#E8D493" opacity=".9"/>
+  <circle cx="510" cy="298" r="11" fill="#E8862E" opacity=".7"/>
+  <!-- mint -->
+  <g fill="#7C8B5A" opacity=".55"><ellipse cx="300" cy="312" rx="7" ry="3" transform="rotate(-20 300 312)"/><ellipse cx="310" cy="306" rx="6" ry="3" transform="rotate(30 310 306)"/></g>
+</g>
+  <!-- floor -->
+  <path d="M60 392 C200 390 400 394 560 392 L570 408 L50 408 Z" fill="#EADFD1" opacity=".9"/>
+</g>
+<g fill="none" stroke="#2a2520" stroke-linecap="round" stroke-linejoin="round" filter="url(#ink)">
+  <!-- her head, wrapped -->
+  <path d="M176 104 C170 84 182 66 202 64 C222 64 232 80 230 98 C226 116 214 128 204 132" stroke-width="1.5"/>
+  <path d="M190 96 C190 110 198 120 208 118 C215 116 219 108 218 98" stroke-width="1.3"/>
+  <path d="M176 104 C166 130 168 152 178 162" stroke-width="1.2"/>
+  <path d="M204 132 L206 144" stroke-width="1.1"/>
+  <!-- shoulders and dress -->
+  <path d="M180 150 C196 144 214 144 226 152" stroke-width="1.5"/>
+  <path d="M182 152 C172 220 160 300 150 386 C180 394 230 394 262 386 C250 300 236 220 224 152" stroke-width="1.7"/>
+  <path d="M150 386 C160 380 170 389 182 384 C194 379 206 390 218 384 C230 379 244 390 262 386" stroke-width="1"/>
+  <path d="M206 170 C204 250 210 320 222 388" stroke-width="0.8"/>
+  <path d="M190 180 C184 260 178 320 176 388" stroke-width="0.7"/>
+  <!-- the arm, raised, pouring -->
+  <path d="M222 156 C238 150 252 136 264 124 C270 118 276 116 280 118" stroke-width="1.4"/>
+  <path d="M226 172 C244 164 258 150 270 138" stroke-width="1.2"/>
+  <!-- the other hand on her waist -->
+  <path d="M184 160 C176 190 174 214 186 226 C192 230 198 226 200 220" stroke-width="1.2"/>
+  <!-- the teapot -->
+  <path d="M276 112 C266 120 266 140 280 146 C296 150 312 146 318 134 C322 120 312 110 300 108 C292 106 282 108 276 112 Z" stroke-width="1.5"/>
+  <path d="M284 108 C286 98 300 96 304 106" stroke-width="1.2"/>
+  <path d="M294 96 L294 92" stroke-width="1.6"/>
+  <path d="M316 126 C324 120 330 116 334 118" stroke-width="1.4"/>
+  <path d="M272 122 C262 120 260 134 270 138" stroke-width="1.2"/>
+  <!-- the tea falling -->
+  <path d="M334 120 C335 180 338 250 340 310" stroke-width="0.8"/>
+<g transform="translate(0 24)">
+  <!-- the glass -->
+  <path d="M330 286 L350 286 L347 308 L333 308 Z" stroke-width="1.3"/>
+  <path d="M332 292 C338 296 344 296 349 292" stroke-width="0.7"/>
+  <path d="M336 280 c-3 -6 3 -8 0 -14 M344 278 c-3 -6 3 -8 0 -14" stroke-width="0.7"/>
+  <!-- the low round table -->
+  <path d="M250 318 C250 300 550 300 550 318 C550 336 250 336 250 318 Z" stroke-width="1.5"/>
+  <path d="M270 326 L274 368 M530 326 L526 368 M400 346 L400 368" stroke-width="1.3"/>
+  
+  <!-- khobz, scored -->
+  <path d="M396 300 C396 286 464 286 464 300 C464 310 396 310 396 300 Z" stroke-width="1.3"/>
+  <path d="M412 296 L420 300 M428 293 L436 297 M444 295 L452 299" stroke-width="0.8"/>
+  <!-- two little bowls, an orange, mint -->
+  <path d="M368 314 C368 306 392 306 392 314 C390 322 370 322 368 314 Z" stroke-width="1.2"/>
+  <path d="M470 308 C470 300 494 300 494 308 C492 316 472 316 470 308 Z" stroke-width="1.2"/>
+  <path d="M510 287 C498 287 498 309 510 309 C522 309 522 287 510 287 Z" stroke-width="1.2"/>
+  <path d="M510 287 C512 282 516 280 520 281" stroke-width="0.9"/>
+  <path d="M296 314 C302 306 312 302 318 304" stroke-width="0.9"/>
+</g>
+  <!-- the floor -->
+  <path d="M60 392 C200 390 400 394 560 392" stroke-width="1"/>
+</g>
+</svg>

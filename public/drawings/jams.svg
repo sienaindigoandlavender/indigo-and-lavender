@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220">
+<defs><filter id="ink"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="13"/><feDisplacementMap in="SourceGraphic" scale="1.8"/></filter>
+<filter id="wash" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="9" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="10" result="d"/><feGaussianBlur in="d" stdDeviation="1"/></filter></defs>
+<g filter="url(#wash)" style="mix-blend-mode:multiply">
+  <!-- jar 1: fig jam, cloth top rose -->
+  <path d="M132 92 L130 186 C150 192 186 192 204 186 L202 92 Z" fill="#7A3B4E" opacity=".55"/>
+  <path d="M122 82 C140 70 194 70 212 82 L206 98 C186 92 148 92 128 98 Z" fill="#D9826B" opacity=".6"/>
+  <!-- jar 2: apricot, cloth top indigo -->
+  <path d="M238 70 L236 186 C258 192 300 192 320 186 L318 70 Z" fill="#E8A33D" opacity=".6"/>
+  <path d="M228 60 C248 46 308 46 328 60 L322 78 C300 70 256 70 234 78 Z" fill="#3B4A6B" opacity=".5"/>
+  <!-- jar 3: orange marmalade, short, cloth top saffron -->
+  <path d="M352 112 L350 186 C366 191 396 191 410 186 L408 112 Z" fill="#E8862E" opacity=".6"/>
+  <path d="M344 104 C360 94 400 94 416 104 L411 118 C394 112 366 112 349 118 Z" fill="#E8D493" opacity=".85"/>
+  <!-- figs -->
+  <path d="M60 186 C44 182 40 160 54 150 C60 146 62 140 64 136 C66 140 68 146 74 150 C88 160 84 182 68 186 Z" fill="#6B4A6B" opacity=".55"/>
+  <path d="M92 188 C78 186 74 168 86 160 C91 157 93 152 94 148 C96 152 98 157 103 160 C115 168 111 186 98 188 Z" fill="#6B4A6B" opacity=".45"/>
+  <!-- half fig -->
+  <path d="M104 190 C104 176 124 176 124 190 Z" fill="#C8577A" opacity=".55"/>
+  <!-- apricots -->
+  <circle cx="440" cy="176" r="13" fill="#E8A33D" opacity=".7"/>
+  <circle cx="466" cy="180" r="11" fill="#E8A33D" opacity=".6"/>
+  <!-- orange with leaf -->
+  <circle cx="508" cy="170" r="20" fill="#E8862E" opacity=".65"/>
+  <ellipse cx="524" cy="146" rx="11" ry="5" transform="rotate(-30 524 146)" fill="#7C8B5A" opacity=".55"/>
+  <!-- strawberries -->
+  <path d="M548 184 C540 176 542 166 552 166 C562 166 564 176 556 184 Z" fill="#C8414E" opacity=".6"/>
+  <path d="M570 188 C563 181 565 172 573 172 C581 172 583 181 576 188 Z" fill="#C8414E" opacity=".5"/>
+  <!-- table -->
+  <path d="M20 190 C200 188 400 192 590 190 L590 204 L20 204 Z" fill="#EADFD1" opacity=".9"/>
+</g>
+<g fill="none" stroke="#2a2520" stroke-linecap="round" stroke-linejoin="round" filter="url(#ink)">
+  <!-- jar 1 -->
+  <path d="M132 96 L130 186 C150 192 186 192 204 186 L202 96" stroke-width="1.5"/>
+  <path d="M122 82 C140 70 194 70 212 82 L206 98 C186 92 148 92 128 98 Z" stroke-width="1.3"/>
+  <path d="M130 96 C150 102 184 102 204 96" stroke-width="1"/>
+  <path d="M150 100 C146 108 140 112 134 112 M150 100 C156 108 160 114 160 120" stroke-width="0.9"/>
+  <path d="M146 128 L188 128 L188 152 L146 152 Z" stroke-width="0.9"/>
+  <path d="M154 140 C162 136 172 144 180 138" stroke-width="0.7"/>
+  <!-- jar 2 -->
+  <path d="M238 74 L236 186 C258 192 300 192 320 186 L318 74" stroke-width="1.5"/>
+  <path d="M228 60 C248 46 308 46 328 60 L322 78 C300 70 256 70 234 78 Z" stroke-width="1.3"/>
+  <path d="M236 76 C258 82 298 82 320 76" stroke-width="1"/>
+  <path d="M300 80 C304 90 310 96 316 98 M300 80 C296 92 298 100 302 106" stroke-width="0.9"/>
+  <path d="M256 140 C266 128 280 124 292 120 M266 132 C262 124 264 118 270 116 M278 126 C282 118 288 116 292 118" stroke-width="0.8"/>
+  <!-- jar 3 -->
+  <path d="M352 116 L350 186 C366 191 396 191 410 186 L408 116" stroke-width="1.5"/>
+  <path d="M344 104 C360 94 400 94 416 104 L411 118 C394 112 366 112 349 118 Z" stroke-width="1.3"/>
+  <path d="M351 116 C368 121 392 121 409 116" stroke-width="1"/>
+  <!-- a little spoon leaning -->
+  <path d="M414 186 L432 120" stroke-width="1.2"/>
+  <path d="M430 124 C428 112 440 108 440 120 C440 126 434 128 430 124 Z" stroke-width="1.1"/>
+  <!-- figs -->
+  <path d="M60 186 C44 182 40 160 54 150 C60 146 62 140 64 136 C66 140 68 146 74 150 C88 160 84 182 68 186 Z" stroke-width="1.3"/>
+  <path d="M64 136 L66 130" stroke-width="1.3"/>
+  <path d="M92 188 C78 186 74 168 86 160 C91 157 93 152 94 148 C96 152 98 157 103 160 C115 168 111 186 98 188 Z" stroke-width="1.3"/>
+  <path d="M104 190 C104 176 124 176 124 190" stroke-width="1.2"/>
+  <path d="M110 186 l1 -1 M114 183 l1 -1 M118 186 l1 -1 M114 188 l1 -1" stroke-width="1.4"/>
+  <!-- apricots -->
+  <path d="M440 163 C426 163 426 189 440 189 C454 189 454 163 440 163 Z" stroke-width="1.2"/>
+  <path d="M440 165 C436 172 436 182 440 188" stroke-width="0.7"/>
+  <path d="M466 169 C454 169 454 191 466 191 C478 191 478 169 466 169 Z" stroke-width="1.2"/>
+  <!-- orange -->
+  <path d="M508 150 C482 150 482 190 508 190 C534 190 534 150 508 150 Z" stroke-width="1.3"/>
+  <path d="M508 150 C512 144 516 142 520 142" stroke-width="1"/>
+  <path d="M514 148 C520 138 532 138 536 142 C530 148 520 150 514 148 Z" stroke-width="1"/>
+  <!-- strawberries -->
+  <path d="M548 184 C540 176 542 166 552 166 C562 166 564 176 556 184 C554 186 550 186 548 184 Z" stroke-width="1.2"/>
+  <path d="M546 166 L552 160 L558 166" stroke-width="1"/>
+  <path d="M570 188 C563 181 565 172 573 172 C581 172 583 181 576 188 C574 190 572 190 570 188 Z" stroke-width="1.2"/>
+  <path d="M568 172 L573 167 L578 172" stroke-width="1"/>
+  <!-- table line -->
+  <path d="M20 190 C200 188 400 192 590 190" stroke-width="1"/>
+</g>
+</svg>
