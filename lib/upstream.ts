@@ -5,6 +5,7 @@ export const UPSTREAM = process.env.UPSTREAM_URL || "https://www.riaddisiena.com
 /** Strip the old house name and links from anything shown to guests here. */
 export function neutral(text: string) {
   return text
+    .replace(/https:\/\/res\.cloudinary\.com\/[^"\s]*riad-di-siena[^"\s]*/g, (u) => `/api/img?u=${encodeURIComponent(u)}`)
     .replace(/https?:\/\/(www\.)?riaddisiena\.com\/transfer/g, "https://indigoandlavender.love/the-riad/transfer")
     .replace(/https?:\/\/(www\.)?riaddisiena\.com\/directions\?building=annex/g, "https://indigoandlavender.love/the-douaria/directions")
     .replace(/https?:\/\/(www\.)?riaddisiena\.com\/directions/g, "https://indigoandlavender.love/the-riad/directions")
