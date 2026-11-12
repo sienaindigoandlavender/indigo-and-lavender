@@ -23,9 +23,12 @@ export default function PassportUpload({ b, k, label, sending, failed }: { b: st
     if (!list?.length) return;
     setState("busy");
     try {
-      const files = await Promise.all(Array.from(list).slice(0, 10).map(shrink));
-      const r = await fetch("/api/passport", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ b, k, files }) });
-      if (!r.ok) throw new Error(String(r.status));
+      // One photo per request: Vercel refuses bodies over 4.5 MB, and several phone photos
+      // sent together went over it (12 Nov 2026), so the upload failed.
+      for (const f of Array.from(list).slice(0, 10)) {
+        const r = await fetch("/api/passport", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ b, k, files: [await shrink(f)] }) });
+        if (!r.ok) throw new Error(String(r.status));
+      }
       window.location.reload();
     } catch { setState("error"); }
   }
