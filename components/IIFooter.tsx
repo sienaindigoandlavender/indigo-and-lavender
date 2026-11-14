@@ -20,7 +20,7 @@ export default function IIFooter() {
             <div>
               <span className="text-xs tracking-widest mb-4 block">STAY</span>
               <ul className="space-y-1.5">
-                {[["The House", "/the-house"], ["Philosophy", "/philosophy"], ["Rooms", "/rooms"], ["Amenities", "/amenities"]].map(([t, h]) => (
+                {[["The House", "/the-house"], ["Philosophy", "/philosophy"], ["Amenities", "/amenities"], ["Rooms", "/rooms"]].map(([t, h]) => (
                   <li key={h}><a href={`${II}${h}`} className={link}>{t}</a></li>
                 ))}
               </ul>
