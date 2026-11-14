@@ -153,7 +153,7 @@ export default async function KeysPage({ searchParams }: { searchParams: Record<
               <p className="text-[17px] font-medium">{lk.intro}</p>
               <p className="text-[17px]">{gt.passport ? `✓ ${lk.passportDone}` : lk.passport}</p>
               {!gt.passport && <PassportUpload b={g.booking_id} k={q.k || ""} label={lk.upload} sending={lk.sending} failed={lk.upFailed} />}
-              <p className="text-[17px]">{gt.taxOk ? `✓ ${lk.taxDone}` : lk.tax.replace("{amount}", amount)}</p>
+              <p className="text-[17px]">{gt.taxOk ? `✓ ${lk.taxDone}` : lk.tax.replace(/\{amount\}/g, amount).replace("{dh}", gt.tax !== null ? String(Math.round(gt.tax * 10)) : "")}</p>
               {!gt.taxOk && <a href={taxHref} className="keys-noprint inline-block px-6 py-3.5 bg-night text-limewash no-underline">{lk.pay.replace("{amount}", amount)}</a>}
               {q.tax === "failed" && <p className="text-[17px] font-medium">{lk.failed}</p>}
             </div>
