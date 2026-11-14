@@ -6,7 +6,7 @@ The neutral guest site (Jacqueline, 6 Nov 2026). Airbnb guests must never see "R
 - `/welcome?b=…&k=…` (the guest's signed link; data from the house's `/api/welcome-data`). `/arrival` (arrival time, proxied `/api/arrival`) and `/keys` (data from `/api/keys-data`; passport upload via `/api/passport`, tax link via `/api/tax`).
 - `/the-riad/directions` (No. 37), `/the-riad/transfer`, `/the-riad/dinners`; `/the-douaria/directions` (No. 35), `/the-douaria/transfer`.
 - Data comes from the main site's API server-side (`lib/upstream.ts`, `UPSTREAM_URL`); `neutral()` strips the old name and links from every response. The browser never calls riaddisiena.com.
-- Never "Riad di Siena", never riaddisiena.com, never a link to another brand (Slow Morocco, Zfriti, Dance with Lions…). Signed Jacqueline, Zahra and Mouad.
+- Never "Riad di Siena", never riaddisiena.com, never a link to another brand (Slow Morocco, Zfriti, Dance with Lions…). Signed Jacqueline, Zahra and Mouad. Exception (Jacqueline, 14 Nov 2026): the ii footer (`IIFooter`, Booking guests only) links Morocco → slowmorocco.com and a LEARN column (derb.so, darija.io, amazigh.online, tsawer.org); the bare Airbnb pages still link nowhere.
 - noindex everywhere (robots, X-Robots-Tag).
 
 ## House rules (every site)

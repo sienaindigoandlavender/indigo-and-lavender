@@ -8,7 +8,7 @@ export default function IIFooter() {
     <footer className="text-ink print:hidden">
       <div className="bg-[#e8e0d4]">
         <div className="max-w-7xl mx-auto px-6 py-10">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
             <div className="col-span-2 md:col-span-2">
               <span className="flex flex-col items-start leading-tight mb-3">
                 <span className="text-sm tracking-[0.3em] font-light">THE</span>
@@ -28,8 +28,16 @@ export default function IIFooter() {
             <div>
               <span className="text-xs tracking-widest mb-4 block">EXPERIENCE</span>
               <ul className="space-y-1.5">
-                {[["The Medina", "/the-medina"], ["Dinners", "/dinners"], ["The Sahara", "/sahara"], ["Day Trips", "/day-trips"]].map(([t, h]) => (
-                  <li key={h}><a href={`${II}${h}`} className={link}>{t}</a></li>
+                {[["The Medina", "/the-medina"], ["Dinners", "/dinners"], ["The Sahara", "/sahara"], ["Day Trips", "/day-trips"], ["Morocco", "https://www.slowmorocco.com"]].map(([t, h]) => (
+                  <li key={h}><a href={h.startsWith("http") ? h : `${II}${h}`} className={link}>{t}</a></li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <span className="text-xs tracking-widest mb-4 block">LEARN</span>
+              <ul className="space-y-1.5">
+                {[["Derb.so", "https://derb.so"], ["Darija.io", "https://darija.io"], ["Amazigh.online", "https://www.amazigh.online"], ["Tsawer", "https://www.tsawer.org/"]].map(([t, h]) => (
+                  <li key={h}><a href={h} className={link}>{t}</a></li>
                 ))}
               </ul>
             </div>
