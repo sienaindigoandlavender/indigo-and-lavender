@@ -16,3 +16,5 @@ The neutral guest site (Jacqueline, 6 Nov 2026). Airbnb guests must never see "R
 - Dates with the house calendar (`components/DatePicker.tsx`), never a browser date input.
 - No visible scrollbars.
 - Also served through ii.riaddisiena.com for Booking.com guests (14 Nov 2026): the-douaria rewrites the guest pages and APIs here; `assetPrefix: "/il-static"` in next.config.js must stay. /api/tax accepts redirects back to ii.riaddisiena.com.
+
+- Voice (Jacqueline, 23 Nov 2026): light, never pompous. No educating, no lecturing, no sermons. House rule for every site.
